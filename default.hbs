@@ -1,0 +1,111 @@
+<!doctype html>
+<html amp>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    {{#if post}}
+    <meta name="keywords" content="{{#each post.tags}}{{name}},{{/each}}" />
+    {{else}}
+    <meta name="keywords" content="Quang teo, quangteo, quangteomedia, quangteo media, ruby, rails, php, engineering, nano, ubuntu" />
+    {{/if}}
+
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
+
+    <link rel="alternate" href="http://quangteomedia.com/" hreflang="vi" />
+
+    {{! Favicons. I used http://realfavicongenerator.net/ - a great favicons generator. }}
+    <link rel="shortcut icon" href="{{asset "favicons/favicon.ico"}}">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset "favicons/apple-touch-icon-57x57.png"}}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{asset "favicons/apple-touch-icon-60x60.png"}}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{asset "favicons/apple-touch-icon-72x72.png"}}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{asset "favicons/apple-touch-icon-76x76.png"}}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{asset "favicons/apple-touch-icon-114x114.png"}}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset "favicons/apple-touch-icon-120x120.png"}}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{asset "favicons/apple-touch-icon-144x144.png"}}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{asset "favicons/apple-touch-icon-152x152.png"}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset "favicons/apple-touch-icon-180x180.png"}}">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-96x96.png"}}" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-16x16.png"}}" sizes="16x16">
+    <link rel="icon" type="image/png" href="{{asset "favicons/favicon-32x32.png"}}" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="msapplication-TileImage" content="{{asset "favicons/mstile-144x144.png"}}" />
+    <meta name="msapplication-config" content="{{asset "favicons/browserconfig.xml"}}" />
+
+    {{! Styles }}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <link rel="stylesheet" href="{{@blog.url}}{{asset "build/all.min.css"}}">
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    {{! Google Analytics }}
+    {{> "analytics"}}
+
+    {{! Twitter card }}
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@quangteomedia" />
+    <meta property="twitter:title" content="{{meta_title}}" />
+    {{#if post}}
+        {{#post}}
+            <meta property="twitter:description" content="{{excerpt characters=180}}" />
+        {{/post}}
+    {{else}}
+        <meta property="twitter:description" content="{{meta_description}}" />
+    {{/if}}
+
+    {{! Open Graph }}
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{meta_title}}" />
+    {{#if post}}
+        {{#post}}
+            <meta property="og:description" content="{{excerpt words=50}}" />
+        {{/post}}
+    {{else}}
+        <meta property="og:description" content="{{meta_description}}" />
+    {{/if}}
+    <meta property="og:image" content="http://i350.photobucket.com/albums/q413/quangteomedia/quangteo-media-lebich.jpg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+
+    {{! JS}}
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="{{asset "build/all.min.js"}}"></script>
+    {{! Init HighlightJS}}
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <style amp-custom>
+        .my-sidebar-bg {
+            background-image: url({{#if @blog.cover}}{{@blog.cover}}{{else}}http://quangteomedia.com/content/images/2015/10/green-abstract-background-optimized.jpg{{/if}})
+        }
+    </style>
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+<body class="{{body_class}}">
+
+    {{> "sidebar"}}
+
+    <div class="content">
+        {{{body}}}
+    </div>
+
+    {{! Site footer }}
+    <div class="body-footer">
+        {{> "footer"}}
+    </div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+</body>
+</html>
