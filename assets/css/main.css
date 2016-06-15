@@ -592,10 +592,18 @@ a:hover {
     margin-bottom: 5px;
 }
 
+.post-content a {
+    text-decoration: none;
+
+    color: #009688;
+}
+
 .content .post .post-title {
     font-weight: 300;
 
     margin: 0;
+
+    color: #009688;
 }
 
 .content .post .post-title a {
@@ -806,6 +814,10 @@ a:hover {
     text-transform: uppercase;
 }
 
+.post-comments a {
+    color: #009688;
+}
+
 .share {
     text-align: right !important;
 }
@@ -823,6 +835,18 @@ a:hover {
     margin-left: 1rem;
 
     list-style-type: none;
+}
+
+.share li .gplus {
+    color: #dd4b39;
+}
+
+.share li .twitter {
+    color: #4099ff;
+}
+
+.share li .facebook {
+    color: #3b5998;
 }
 
 .tag-archive-header {
@@ -943,6 +967,22 @@ a:hover {
         display: none;
     }
 
+    .content .post .post-title {
+        font-size: 1.5em;
+    }
+
+    .content .post-content {
+        font-size: .9em;
+    }
+
+    .content .post-content h2 {
+        font-size: 1.2em;
+    }
+
+    .content .post-content ul {
+        padding-left: 19px;
+    }
+
     .body-footer {
         display: block;
 
@@ -979,7 +1019,7 @@ a:hover {
         margin-top: 0;
     }
 
-    .content .post .post-thumb {
+    .content .post section.post-thumb {
         display: block;
         float: none;
         overflow: hidden;
@@ -998,6 +1038,14 @@ a:hover {
         padding-top: 45%;
 
         content: '';
+    }
+
+    .content .post div.post-thumb {
+        display: none;
+    }
+
+    hr {
+        margin: 0;
     }
 }
 

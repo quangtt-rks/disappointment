@@ -9,6 +9,12 @@
         {{! Everything below outputs content of the the post which has been published }}
         <h1 class="post-title" itemprop="headline">{{{title}}}</h1>
         <hr>
+        <section class="post-thumb" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"
+            style="background-image: url('{{image}}');">
+            <meta itemprop="url" content="{{image absolute="true"}}">
+            <meta itemprop="width" content="640">
+            <meta itemprop="height" content="480">
+        </section>
         <section class="post-content">
             {{content}}
         </section>
@@ -47,15 +53,15 @@
             <section class="share">
                 <h4 class="post-share">Share this post</h4>
                 <ul>
-                    <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                    <li><a href="https://plus.google.com/share?url={{url absolute="true"}}" class="gplus"
                            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <i class="icon icon-gplus-squared"></i>
                     </a></li>
-                    <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                    <li><a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="twitter"
                            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <i class="icon icon-twitter-squared"></i>
                     </a></li>
-                    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="facebook"
                            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <i class="icon icon-facebook-squared"></i>
                     </a></li>
