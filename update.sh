@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "\n**************** [MURAKAMI] ****************\n*"
+echo "\n**************** [DISAPPOINTMENT] ****************\n*"
 
 line_head="*  "
 current_version=$(git describe --tags "$(git rev-list --tags --max-count=1)")
@@ -16,7 +16,7 @@ then
 else
   echo "$line_head Updating $current_version ➞ $latest_version..."
   git merge "$latest_version" -q
-  echo "* ✓ Murakami has been updated! Have fun!"
+  echo "* ✓ Disappointment has been updated! Have fun!"
 fi
 
-echo "*\n**************** [MURAKAMI] ****************\n"
+echo "*\n**************** [DISAPPOINTMENT] ****************\n"

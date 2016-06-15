@@ -1,6 +1,6 @@
 {
-  "name": "Murakami",
-  "version": "0.1.5",
+  "name": "Disappointment",
+  "version": "0.1",
   "description": "A minimalistic and responsive theme for Ghost.",
   "devDependencies": {
     "del": "^0.1.1",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:quangtt/murakami.git"
+    "url": "git@github.com:quangtt/disappointment.git"
   },
   "keywords": [
     "Ghost",
