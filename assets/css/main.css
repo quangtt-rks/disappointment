@@ -129,7 +129,7 @@ html {
 }
 
 body {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noticia Text', serif;
     font-size: 1.1em;
     line-height: 1.45em;
 
@@ -157,7 +157,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noticia Text', serif;
     line-height: 1;
 
     margin-top: 0;
@@ -731,7 +731,7 @@ a:hover {
 /* End of Project Page */
 
 .pagination {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noticia Text', serif;
     font-size: .9em;
 
     position: relative;
@@ -763,7 +763,7 @@ a:hover {
 }
 
 .sidebar .site-footer {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noticia Text', serif;
     font-size: .7rem;
     line-height: 1.4em;
 
@@ -968,7 +968,7 @@ a:hover {
     }
 
     .content .post .post-title {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 
     .content .post-content {
@@ -976,7 +976,7 @@ a:hover {
     }
 
     .content .post-content h2 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     .content .post-content ul {
@@ -994,7 +994,7 @@ a:hover {
     }
 
     .body-footer .site-footer {
-        font-family: 'Noto Serif', serif;
+        font-family: 'Noticia Text', serif;
         font-size: .7rem;
         line-height: 1.8em;
 
