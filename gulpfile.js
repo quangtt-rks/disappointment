@@ -22,7 +22,7 @@ gulp.task('clean', function(cb) {
 gulp.task('minify-js', function() {
     // Minify and copy all JavaScript
     return streamqueue({objectMode: true},
-        gulp.src('assets/js/highlight.js'),
+        gulp.src('assets/js/prism.js'),
         gulp.src('assets/js/index.js'),
         gulp.src('assets/js/jquery.fitvids.js')
     )
@@ -35,7 +35,7 @@ gulp.task('minify-css', function() {
     return streamqueue({ objectMode: true },
         gulp.src('assets/css/normalize.css'),
         gulp.src('assets/css/main.css'),
-        gulp.src('assets/css/hljs.css')
+        gulp.src('assets/css/prism.css')
     )
         .pipe(minifyCSS())
         .pipe(concat('all.min.css'))
