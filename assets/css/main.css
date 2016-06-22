@@ -297,11 +297,12 @@ tt {
     font-family: Inconsolata, monospace, sans-serif;
     font-size: .85em;
 
-    padding: 1px 3px;
+    padding: 1px 3px 2px;
 
     white-space: pre;
 
-    border: 1px solid #e3edf3;
+    color: #c92c2c;
+    border: 1px solid #dedede;
     border-radius: 2px;
     background: #f7fafb;
 }
@@ -1046,6 +1047,10 @@ a:hover {
 
     hr {
         margin: 0;
+    }
+
+    blockquote {
+        padding: 0 0 0 .7em;
     }
 }
 
