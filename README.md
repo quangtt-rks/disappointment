@@ -2,7 +2,7 @@
 Disappointment is a customized minimalistic [Ghost](https://ghost.org/) theme inspired by
 [KISS](https://github.com/calincru/KISS).
 
-![Disappointment Mockup](http://i.imgur.com/FNuEFEj.jpg)
+![Disappointment Mockup](http://i.imgur.com/q5sRMIk.jpg)
 
 Check it out on [my blog](http://quangteomedia.com).
 
@@ -12,18 +12,14 @@ Check it out on [my blog](http://quangteomedia.com).
 - Disqus comments
 - 46 Social icons ([Fontello](http://fontello.com))
 - Minified assets
-- Code syntax highlighting (via [Highlight.js](https://highlightjs.org/))
+- Code syntax highlighting (via [Prismjs](http://prismjs.com))
 - Script for easy updating
 
 ## SEO
 - Post tags as meta keywords
 - Structured Data (passed Google Structured Data Testing Tool)
-- Targeting language (hreflang tag, default is `vi` - Vietnamese)
-- Apply some standards of AMP HTML (but not much effective, customize Ghost HTML is hard as shit)
-
 
 ## // TODO
-- Trying to fix validation errors of AMP HTML Validation
 - ...
 
 ## Installation
@@ -71,16 +67,16 @@ sh update.sh
 
 **Desktop view**
 
-![Desktop view](http://i.imgur.com/uPSWrxE.png)
+![Desktop view](http://i.imgur.com/VuP8bZ9.jpg)
 
 **Desktop view (single post)**
 
-![Desktop post view](http://i.imgur.com/RHsnxuM.png)
+![Desktop post view](http://i.imgur.com/3OZo5DR.jpg)
 
 **Mobile view**
 
-![Mobile view](http://i.imgur.com/crGgbQb.png)
+![Mobile view](http://i.imgur.com/iDFCXot.jpg)
 
 **Mobile view (single post)**
 
-![Mobile post view](http://i.imgur.com/nh4v29A.png)
+![Mobile post view](http://i.imgur.com/WMHDZqh.jpg)
