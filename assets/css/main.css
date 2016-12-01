@@ -1021,7 +1021,7 @@ a:hover {
     }
 
     .content .post section.post-thumb {
-        display: block;
+        display: none;
         float: none;
         overflow: hidden;
 
