@@ -15,18 +15,20 @@
         {{! Navigation menu }}
         {{navigation}}
 
-        <script>
-          (function() {
-            var cx = '004119216199375689155:6t1gqh5bx3c';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:searchresults-only></gcse:searchresults-only>
+        <div class="googlesearch">
+            <script>
+              (function() {
+                var cx = '004119216199375689155:6t1gqh5bx3c';
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+              })();
+            </script>
+            <gcse:searchresults-only></gcse:searchresults-only>
+        </div>
 
         {{! Social links }}
         {{> "social"}}
