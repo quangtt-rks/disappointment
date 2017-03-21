@@ -513,7 +513,7 @@ a:hover {
     font-size: 1em;
     font-style: italic;
     line-height: 1.5em;
-
+    white-space: pre-wrap;
     margin: 1em 0 1em 0;
 }
 
