@@ -515,6 +515,8 @@ a:hover {
     line-height: 1.5em;
 
     margin: 1em 0 1em 0;
+
+    white-space: pre-wrap;
 }
 
 .sidebar .footer {
